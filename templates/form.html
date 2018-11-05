@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ body   {
+	background-color: grey;
+	color: white;
+	text-align: center;
+	}
+ .main  {
+	font-size:60px;
+	font-family: Arial Black
+        }
+ .title
+	{
+        font-size: 40px;
+	font-family: Arial; 
+	}
+ .graph
+	{
+	font-size: 20px;
+	}
+ .radio
+	{
+	
+	}
+ .comment
+	{
+	 font-size:20px;
+	}
+</style>
+</head>
+        <body bgcolor='black'>
+	<form action="/graph" method="POST">
+		<p class='main'>Graph Plotter</p><hr>
+		<p class='title'>Title For Graph: 
+		<input type='text' name='plot_title' placeholder='Title'>
+		</p>
+		<p class='graph'>Graph For:
+		<input type="text" name="y_label" placeholder='Y Label'>vs<input type="text" name="x_label" placeholder='X Lable'>
+		</p>
+		<p class='comment'>Enter Values seperated by commas(,)</p> 		 
+		 <p class='graph'>X-Axis Values:
+		 <input type="text" name="xaxis"  placeholder='X-Values'>
+		 </p>
+		 <p class='graph'>Y-Axis Values:
+		 <input type="text" name="yaxis" placeholder='Y-Values'>
+		 </p>
+		 <div class='radio'>
+		 <br>
+		 <input type="radio" name="plot" value="line">Line Plot
+		 <br>
+		 <input type="radio" name="plot" value="scatter">Scatter Plot
+		 <br>
+		 <input type="radio" name="plot" value="bar">Bar
+		 <br>
+		 <input type="radio" name="plot" value="hist">Histogram(On the basis of Y-Axis Values)
+		 </div>
+		 <br>
+		 <input type="submit" value="Submit" >
+		 <input type="reset"> 
+	 </form>
+         
+	</body>
+</html>
